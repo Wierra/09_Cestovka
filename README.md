@@ -1,7 +1,6 @@
 # Cestovka
 
 Dobrovolný úkol pro kurz Staň se kóderkou od Czechitas.
-
 - [Cíl úkolu](#Cíl-úkolu)
 - [Grafické zadání](#Grafické-zadání)
 - [Jak si stáhnout podklady](#Jak-si-stáhnout-podklady)
@@ -16,7 +15,6 @@ Tentokrát máš k dispozici opět jenom zadání v podobě grafického návrhu 
 
 
 ## Cíl úkolu
-
 Cílem projektu je procvičit si použití různých technik:
 - **Vytvoření stránky z nuly**
   - tentokrát nemáš připravený žádný kód
@@ -43,9 +41,7 @@ Cílem projektu je procvičit si použití různých technik:
   - určitě se ti bude hodit i vnořování prvků nebo media query
   - umíš-li už rozdělit CSS pomocí Sassu na více dílčích souborů, toto je ideální úkol, kde si to můžeš vyzkoušet
 
-
 ## Grafické zadání
-
 Všechny potřebné obrázky, rozměry, použitá písma, barvy, apod. najdeš online v [grafickém návrhu vyexportovaném z Adobe XD](https://xd.adobe.com/view/50cee100-59ff-473d-b34a-cbf85b2a7b04-059d/grid/).
 
 Pro případ, že bys chtěla pracovat offline nebo si chtěla s návrhem hrát, ve složce *Adobe-DX-navrh* máš k dispozici soubor *Cestovka.xd*, který si můžeš otevřít v Adobe XD u sebe na počítači (máš-li Adobe XD nainstalované). Pro vypracování úkolu to není nutné - stačí ti online verze, na kterou je odkaz o odstavec výše.
@@ -56,8 +52,6 @@ Nevíš-li, jak s návrhem pracovat, podívej se na [krátké YouTube video (20 
 
 
 ## Jak si stáhnout podklady
-
 1. Udělej si **fork** této repozitáře - tím se ti úkol zkopíruje do tvého GitHub profilu.
 2. Forknutou repozitář si naklonuj k sobě na disk.
-
 Pokud nevíš, co je to **fork repozitáře** a jak ho provést, podívej se na [krátké video](https://youtu.be/K7rE3jRCjD4).
