@@ -1,3 +1,7 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; margin: 0; padding: 0;}
+
+
 $web: #ffffff;
 $text: #000000;
 $box: #f0f0f0;
@@ -5,3 +9,76 @@ $date: #888888;
 $foto_text: #00000000;
 $foto_background: #80808080;
 $not_know: #444444;
+$detail: #f03000;
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-VariableFont-wght.ttf);
+}
+@font-face {
+    font-family: 'Open_Sans';
+    src: url(fonts/Open_Sans/OpenSans_VariableFont_wdth,wght.ttf);
+}
+
+body{
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $web;
+    color: $text;
+}
+.web{
+    margin: 0 auto;
+    max-width: 440px;
+    @media screen and (min-width: 640px){
+
+    }
+    @media screen and (min-width: 1100px){
+
+    }
+}
+.header{
+    text-align: center;
+    margin-top: 36px; 
+    &__logo{
+        width: 235px;
+        height: 30px;
+    }
+}
+.menu{
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.menu__list{
+    padding: 0;
+}
+li.menu__item{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+li.menu__item:hover{
+    background-color: $detail;
+    color: $web;
+}
+.menu__link{
+    text-decoration: none;
+    color: $detail;
+}
+.menu__link:hover{
+    background-color: var(--detail);
+    color: $web;
+}
+
+.footer{
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: $not_know;
+    color: $web;
+    text-align: center;
+}
