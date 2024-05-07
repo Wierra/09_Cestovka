@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CESTOVKA</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,29 +30,86 @@
 
 <main class="main">
 
-    <div class="box">
-
-        <div class="box__palm">
-            <img class="box__img" src="img/palmy.png" alt="Pohoda palmy">
-            <p class="box__price">17 600 Kč</p>
-            <p class="box__title">Pohoda pod palmami</p>
-            <p class="box__text">Nejlepší dovolená pro nejvíc nejlínější lidi na světe</p>
+    <div class="trips">
+        <div class="trip">
+            <img class="trip__img" src="img/palmy.png" alt="Pohoda palmy">
+            <div class="trip__content">
+                <div class="trip__top">
+                    <div class="trip__price">17 600 Kč</div>
+                </div>
+                <div class="trip__bottom">
+                    <h2 class="trip__title">Pohoda pod palmami</h2>
+                    <p class="trip__desc">Nejlepší dovolená pro nejvíc nejlínější lidi na světe</p>
+                </div>
+            </div>
         </div>
 
-        <div class="box__lake">
-            <img class="box__img" src="img/jezero2.png" alt="Klid jezero">
-            <p class="box__price">8 490 Kč</p>
-            <p>Klid u jezera</p>
+        <div class="trip">
+            <img class="trip__img" src="img/jezero2.png" alt="Klid u jezera">
+            <div class="trip__content">
+                <div class="trip__top">
+                    <div class="trip__price">8 490 Kč</div>
+                </div>
+                <div class="trip__bottom">
+                    <h3 class="trip__title">Klid u jezera</h3>
+                </div>
+            </div>
         </div>
 
-        <div class="box__bike">
-            <img class="box__img" src="img/nakole.png" alt="Na kole, na kole">
-            <p class="box__price">4 990 Kč</p>
-            <p>Výlet na kole</p>
+        <div class="trip">
+            <img class="trip__img" src="img/nakole.png" alt="Na kole">
+            <div class="trip__content">
+                <div class="trip__top">
+                    <div class="trip__price">4 990 Kč</div>
+                </div>
+                <div class="trip__bottom">
+                    <h3 class="trip__title">Výlet na kole</h3>
+                </div>
+            </div>
         </div>
-
     </div>
 
+    <div class="trips trips--reverse">
+        <div class="trip">
+            <img class="trip__img" src="img/palmy.png" alt="Pohoda palmy">
+            <div class="trip__content">
+                <div class="trip__top">
+                    <div class="trip__price">17 600 Kč</div>
+                </div>
+                <div class="trip__bottom">
+                    <h2 class="trip__title">Pohoda pod palmami</h2>
+                    <p class="trip__desc">Nejlepší dovolená pro nejvíc nejlínější lidi na světe</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trip">
+            <img class="trip__img" src="img/jezero2.png" alt="Klid u jezera">
+            <div class="trip__content">
+                <div class="trip__top">
+                    <div class="trip__price">8 490 Kč</div>
+                </div>
+                <div class="trip__bottom">
+                    <h3 class="trip__title">Klid u jezera</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="trip">
+            <img class="trip__img" src="img/nakole.png" alt="Na kole">
+            <div class="trip__content">
+                <div class="trip__top">
+                    <div class="trip__price">4 990 Kč</div>
+                </div>
+                <div class="trip__bottom">
+                    <h3 class="trip__title">Výlet na kole</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--
     <div class="offer">
         <div class="offer__point">
             <h2>Podpora na místě</h2>
@@ -105,11 +169,13 @@
             <p>Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
         </div>
     </div>
+-->
 </main>
 
     <footer class="footer">
         <p>&copy2024, Czechitas</p>
     </footer>
+
 </div>
 
 </body>

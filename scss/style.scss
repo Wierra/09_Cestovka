@@ -1,7 +1,6 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; margin: 0; padding: 0;}
 
-
 $web: #ffffff;
 $text: #000000;
 $box: #f0f0f0;
@@ -14,33 +13,33 @@ $detail: #f03000;
 $font_web: 'Montserrat', sans-serif;
 $font_title: 'Open_Sans', sans-serif;
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url(fonts/Montserrat/Montserrat-VariableFont-wght.ttf);
-}
-@font-face {
-    font-family: 'Open_Sans';
-    src: url(fonts/Open_Sans/OpenSans_VariableFont_wdth,wght.ttf);
-}
+// @font-face {
+//     font-family: 'Montserrat';
+//     src: url(fonts/Montserrat/Montserrat-VariableFont-wght.ttf);
+// }
+// @font-face {
+//     font-family: 'Open_Sans';
+//     src: url(fonts/Open_Sans/OpenSans_VariableFont_wdth,wght.ttf);
+// }
 
-body{
-    padding: 20px;
-    font-size: 16px;
-    line-height: 1.6;
-    font-family: $font_web;
-    background-color: $web;
-    color: $text;
-}
-.web{
-    margin: 0 auto;
-    max-width: 440px;
-    @media screen and (min-width: 640px){
+// body{
+//     padding: 20px;
+//     font-size: 16px;
+//     line-height: 1.6;
+//     font-family: $font_web;
+//     background-color: $web;
+//     color: $text;
+// }
+// .web{
+//     margin: 0 auto;
+//     max-width: 440px;
+//     @media screen and (min-width: 640px){
 
-    }
-    @media screen and (min-width: 1100px){
+//     }
+//     @media screen and (min-width: 1100px){
 
-    }
-}
+//     }
+// }
 .header{
     text-align: center;
     margin-top: 36px; 
@@ -55,7 +54,7 @@ body{
     text-align: center;
     margin-bottom: 10px;
     font-size: 18px;
-    menu__list{
+    &__list{
         padding: 0;
     }
     &__item{
@@ -83,4 +82,77 @@ body{
     background-color: $not_know;
     color: $web;
     text-align: center;
+}
+
+
+.trip{
+    width: 300px;
+    height: 350px;
+    position: relative;
+}
+
+.trip__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // object-position: center;
+}
+
+.trip__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.trip__price{
+    display: inline-block;
+    padding: 10px;
+    background-color: $detail;
+    color: white;
+}
+
+.trip__title{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 1px;
+}
+
+.trip__desc{
+    color: white;
+    margin-bottom: 0;
+}
+
+.trips{
+    display: grid;
+    grid-template-rows: 240px 150px 150px;
+    gap: 20px;
+    grid-auto-flow: dance;
+    margin-block: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .trips{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 180px);
+    }
+    .trip:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .trips{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repest(2, 180px);
+    }
+    .trips--reverse .trip:first-child{
+        grid-column: 2 / span 2;
+    }
 }
